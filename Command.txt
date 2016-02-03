@@ -1,0 +1,10 @@
+# build a repository in current folder
+git init  
+# add file in work directory to index area
+git add aaa.txt  
+# commit file in index area to repository
+git commit -m 'add a new file'
+# check out the status of repository
+git status
+# check out the difference between current and latest file
+git diff aaa.txt
