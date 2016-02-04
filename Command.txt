@@ -23,3 +23,7 @@ git checkout -- aaa.txt
 git reset HEAD aaa.txt
 # remove file in workdirectory, changes goes to stage area, not commit 
 git rm ttt.txt
+# push file from localhost to github
+git remote add origin git@github.com:rookiy/LearGit.git
+git push -u origin master
+git push origin master
