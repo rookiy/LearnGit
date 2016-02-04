@@ -8,3 +8,12 @@ git commit -m 'add a new file'
 git status
 # check out the difference between current and latest file
 git diff aaa.txt
+# check out the history of commit
+git log
+git log --pretty=oneline
+# reset work directory to prev commit status, latest commit will be erased
+git reset --hard HEAD^
+# reset work directory to given commit edition
+git reset --hard 4dd84
+# check out command history with commit id
+git reflog
