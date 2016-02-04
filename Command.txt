@@ -27,3 +27,14 @@ git rm ttt.txt
 git remote add origin git@github.com:rookiy/LearGit.git
 git push -u origin master
 git push origin master
+# clone remote repository to local
+git clone git@github.com:rookiy/LearnGit.git
+git clone https://github.com/rookiy/LearnGit.git
+# list branch
+git branch
+# create a new branch
+git branch name
+# switch branch
+git checkout name
+# create and switch branch
+git checkout -b name
