@@ -17,7 +17,9 @@ git reset --hard HEAD^
 git reset --hard 4dd84
 # check out command history with commit id
 git reflog
-# discard the changes in work directory, status go back to the last add or commit
+# discard the changes in work directory(including remove), status go back to the last add or commit
 git checkout -- aaa.txt
 # unstage changes after add
 git reset HEAD aaa.txt
+# remove file in workdirectory, changes goes to stage area, not commit 
+git rm ttt.txt
