@@ -53,3 +53,9 @@ git stash apply
 git stash drop
 git stash pop
 git stash apply stash@{0}
+# delete a unmerged branch
+git branch -D name
+# fetch latest info
+git fetch <remotehost> <remotebranch>
+# fetch and merge
+git fetch <remotehost> <remotebranch>:<localbranch> 
