@@ -63,3 +63,7 @@ git pull <remotehost> <remotebranch>:<localbranch>
 git branch --set-upstream branch-name origin/remote-branch
 # create a branch connected to remote branch
 git checkout -b branch-name origin/branch-name
+# create tag
+git tag v1.0 [commit-id]
+# show info 
+git show tag-name
