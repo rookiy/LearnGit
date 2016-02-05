@@ -38,3 +38,7 @@ git branch name
 git checkout name
 # create and switch branch
 git checkout -b name
+# delete branch
+git branch -d name
+# merge current branch to given branch
+git merge name
