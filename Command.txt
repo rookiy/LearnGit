@@ -44,3 +44,12 @@ git branch -d name
 git merge name
 # branch merging situation 
 git log --graph --pretty=oneline --abbrev-commit
+# git merge no fastforward mode
+git merge --no-ff -m 'merge with --no-ff' dev
+# stash, save current work directory and index state in stash
+git stash
+git stash list
+git stash apply
+git stash drop
+git stash pop
+git stash apply stash@{0}
