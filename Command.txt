@@ -55,7 +55,7 @@ git stash pop
 git stash apply stash@{0}
 # delete a unmerged branch
 git branch -D name
-# fetch latest info
+# fetch latest info, without merge, work directory remain same
 git fetch <remotehost> <remotebranch>
 # fetch and merge
-git fetch <remotehost> <remotebranch>:<localbranch> 
+git pull <remotehost> <remotebranch>:<localbranch> 
