@@ -59,3 +59,7 @@ git branch -D name
 git fetch <remotehost> <remotebranch>
 # fetch and merge
 git pull <remotehost> <remotebranch>:<localbranch> 
+# build connection between local and remote branch
+git branch --set-upstream branch-name origin/remote-branch
+# create a branch connected to remote branch
+git checkout -b branch-name origin/branch-name
