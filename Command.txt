@@ -42,3 +42,5 @@ git checkout -b name
 git branch -d name
 # merge current branch to given branch
 git merge name
+# branch merging situation 
+git log --graph --pretty=oneline --abbrev-commit
