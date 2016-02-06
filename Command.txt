@@ -80,3 +80,9 @@ scp .ssh/id_rsa.pub git@192.168.1.103:/home/git
 touch authorized_keys
 # appemd a file 
 cat id_rsa.pub>>.ssh/authorized_keys
+
+
+# .gitignore related, get tracked file out of repo
+git rm -r --cached file/path/to/be/ignored
+git add .
+git ci -m 'remove tracked file and update .gitignore'
