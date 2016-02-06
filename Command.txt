@@ -67,3 +67,16 @@ git checkout -b branch-name origin/branch-name
 git tag v1.0 [commit-id]
 # show info 
 git show tag-name
+# change remote repo url
+git remote set-url origin git@192.168.1.106:/home/git/repositories/myRep.git
+# checkout remote repo
+git remote -v
+
+# ssh login , remote host should have ssh server on
+ssh try@192.168.1.103
+# copy file to remote host over ssh
+scp .ssh/id_rsa.pub git@192.168.1.103:/home/git
+# create a nonexisting file
+touch authorized_keys
+# appemd a file 
+cat id_rsa.pub>>.ssh/authorized_keys
